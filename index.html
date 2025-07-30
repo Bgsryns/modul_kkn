@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modul Pelatihan Desain Canva</title>
+    <style>
+        /* CSS untuk membuat PDF memenuhi layar */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden; /* Mencegah scroll yang tidak perlu */
+            font-family: sans-serif;
+            background-color: #333; /* Warna latar belakang di sekitar frame */
+        }
+        .pdf-container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        iframe {
+            flex-grow: 1; /* Membuat iframe mengisi sisa ruang */
+            border: none; /* Menghilangkan bingkai di sekitar PDF */
+        }
+        header {
+            background-color: #f8f9fa;
+            padding: 10px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+            font-size: 1.2em;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="pdf-container">
+        <header>
+            Modul Pelatihan Desain Promosi dengan Canva
+        </header>
+        <iframe src="./MODUL.pdf"></iframe>
+    </div>
+
+</body>
+</html>
